@@ -59,6 +59,7 @@ int previous = 0;
     self.totalLabel.text = [NSString stringWithFormat:@"$%.2f", total];
 }
 
+//animation to hide calculations and labels
 - (void)hideLabels {
     [UIView animateWithDuration:0.5 animations:^{
         UIColor *colour = [[UIColor alloc]initWithRed:200.0/255.0 green:215.0/255.0 blue:255.0/255.0 alpha:1.0];
@@ -79,6 +80,7 @@ int previous = 0;
     }];
 }
 
+//animation to hide calculations and labels
 - (void)showLabels {
     [UIView animateWithDuration:0.5 animations:^{
         UIColor *colour = [[UIColor alloc]initWithRed:200.0/255.0 green:255.0/255.0 blue:220/255.0 alpha:1.0];
